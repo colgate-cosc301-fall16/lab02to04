@@ -1,0 +1,3 @@
+/bin/echo No command is next
+
+/bin/echo All done
