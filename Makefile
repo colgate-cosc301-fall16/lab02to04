@@ -16,3 +16,6 @@ clean:
 
 lib%.so: mysh.o
 	$(CC) -shared -o $@ $^ $(LDFLAGS)
+
+counter: counter.o
+	$(CC) -o $@ $^ $(LDFLAGS)
