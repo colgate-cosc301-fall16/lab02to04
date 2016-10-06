@@ -17,5 +17,10 @@ clean:
 lib%.so: mysh.o
 	$(CC) -shared -o $@ $^ $(LDFLAGS)
 
+apps: counter spin
+
 counter: counter.o
+	$(CC) -o $@ $^ $(LDFLAGS)
+
+spin: spin.o
 	$(CC) -o $@ $^ $(LDFLAGS)
